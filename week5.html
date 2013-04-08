@@ -40,12 +40,18 @@
 <!-- Compare and contrast an algorithmic and convolution reverb. Demonstrate the difference and the important features in both types of reverb. --> 
           <h4>Algorithmic Reverb: </h4>
 
-            <p>Algorithmic reverb synthesizes a room’s characteristics by creating algorithms that generate a particular number of reflections, subject them to high-frequency damping, add predelay, simulate a particular room size, and so on. Although this is an “imaginary” reverb, the algorithms are based on analysis of the way acoustic spaces affect sound.
+            <p>Algorithmic reverb synthesizes a room’s characteristics by creating algorithms that generate a particular number of reflections, subject them to high-frequency damping, add predelay, simulate a particular room size, and so on. Although this is an “imaginary” reverb, the algorithms are based on analysis of the way acoustic spaces affect sound.<br /><br />
+
+            Algorithmic reverbs generate your reverb sound strictly based on parameters you set in the DAW, they try to generate the same thing as convolution reverbs but because they are simulating the impulse responses (as opposed to the convolution case) they can tend to sound fake especially when isolated in a solo instrument case. 
             </p>
 
           <h4>Convolution Reverb: </h4>
 
-            <p>A convolution reverb gets its sound by loading an impulse, which is a sampled “snapshot” of a room’s decay characteristics. One way this is performed is by recording a starter pistol shot and decay. Loading this impulse into a convolution reverb tells it how to process an incoming signal so that it decays in the same way as the impulse.
+            <p>A convolution reverb gets its sound by loading an impulse, which is a sampled “snapshot” of a room’s decay characteristics. One way this is performed is by recording a starter pistol shot and decay. Loading this impulse into a convolution reverb tells it how to process an incoming signal so that it decays in the same way as the impulse.<br /><br />
+
+            Since the effect process for these types of reverbs involves running filters over your signal and mixing that with another signal, they often have a larger impact on CPU (this is not always the case, but in general is true).  The CPU hit is similar to another audio track in your project.  So two tracks, each with a convolution reverb as an insert effect will make your DAW behave like it has roughly four tracks playing simultaneously.<br /><br />
+
+            Because of the CPU hit, it’s often recommended you don’t use too many of these (either have them on an effects send channel and share the plug-in across multiple tracks) or use them sparingly for specific instruments.
             </p>
 
           <h4>Comparison: </h4>
