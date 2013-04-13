@@ -44,26 +44,47 @@
           <h4>Oscillator: </h4>
 
             <p>
+            A VCO, or Voltage Controlled Oscillator, will output a signal whose frequency is a function of the settings. In its basic form these maybe simple waveforms (most usually a square wave or a sawtooth wave, but also includes pulse, triangle and sine waves), however these can be dynamically changed through such controls as sync, frequency modulation, and self-modulation. 
+            Sweep range, linearity, and distortion are often the most important specs.
             </p>
 
           <h4>Filter: </h4>
 
             <p>
+            A VCF, or Voltage Controlled Filter, will attenuates frequencies below (high-pass), above (low-pass) or both below and above (band-pass) a certain frequency. VCFs can also be configured to provide band-reject (notch), whereby the high and low frequencies remain while the middle frequencies are removed. Most VCFs have variable resonance, sometimes voltage-controlled.<br /><br />
+
+             The filter receives a signal input from signal sources (including oscillators oscillator(s)), and noise), or the output of other processors. By varying the cutoff frequency, the instrument passes or attenuates partials. <br />
+             By varying the cutoff frequency of the VCF (sometimes very slowly), you create a "sweep".Controlling the cutoff by means of a transient voltage control, such as an envelope generator, especially with relatively fast attack settings, may simulate the attack transients of natural or acoustic instruments.
             </p>
 
           <h4>Amplifier: </h4>
 
           <p>
+          A VCA, or Voltage Controlled Amplifier, is usually a unity-gain amplifier which varies the amplitude of a signal in response to an applied control voltage. The response curve may be linear or exponential. It is also called a two-quadrant multiplier.
           </p>
           
           <h4>Envelope: </h4>
 
           <p>
+	  The envelope is constitued of 4 parameters: the attack time, the decay time, the sustain level and the release time (called ADSR).<br />
+	  <ul>
+	    <li>Attack time is the time taken for initial run-up of level from nil to peak, beginning when the key is first pressed.</li>
+	    <li>Decay time is the time taken for the subsequent run down from the attack level to the designated sustain level.</li>
+	    <li>Sustain level is the level during the main sequence of the sound's duration, until the key is released.</li>
+	    <li>Release time is the time taken for the level to decay from the sustain level to zero after the key is released.</li>
+	  </ul>
+	  This envelope may be applied to overall amplitude control, filter frequency …
+	  <img src="./images/adsr.png"/>
           </p>
 
           <h4>LFO: </h4>
 
           <p>
+          A LFO, or Low Frequency Oscillator, is generally used as a control voltage for another module. For example, modulating a VCO may create vibrato while modulating a VCA may create tremolo. The pulse wave can be used as a timing / trigger function. It may be operated with a period anywhere from a fortieth of a second to several minutes and may or may not be voltage-controlled.<br /><br />
+
+          When routed to control pitch, an LFO creates vibrato. When an LFO modulates amplitude (volume), it creates tremolo. On most synthesizers and sound modules, LFOs feature several controllable parameters, which often include a variety of different waveforms, a rate control, routing options (as described above), a tempo sync feature, and an option to control how much the LFO will modulate the audio signal.<br /><br />
+
+           Dubstep and drum and bass are forms of electronic music which employs frequent use of LFOs, often synchronized to the tempo of the track, for bass sounds that have a "wobble" effect, for example by modulating the cutoff frequency of a low-pass filter to create a distinctive opening-and-closing effect.
           </p>
 
           <h3>Thank you for reading !</h3>
