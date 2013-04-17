@@ -45,7 +45,15 @@
 
             <p>
             A VCO, or Voltage Controlled Oscillator, will output a signal whose frequency is a function of the settings. In its basic form these maybe simple waveforms (most usually a square wave or a sawtooth wave, but also includes pulse, triangle and sine waves), however these can be dynamically changed through such controls as sync, frequency modulation, and self-modulation. 
-            Sweep range, linearity, and distortion are often the most important specs.
+            Sweep range, linearity, and distortion are often the most important specs.<br /><br />
+
+            About the waves the VCO can produce:
+            <ul>
+	      <li>Sine Wave: A Sine Wave is just a fundamental frequency with no overtones or partials. A Sine Wave does not occur in nature. </li>
+	      <li>Triangle Wave: A Triangle Wave is a fundamental frequency with only odd number partials in an amplitude relationship of 1/N^2 where N = Partial #.</li>
+	      <li>Square Wave: A Square Wave is a fundamental frequency with only odd number partials in an amplitude relationship of 1/N where N = Partial #.</li>
+	      <li>Sawtooth Wave: A Sawtooth Wave is a fundamental frequency with all partials in an amplitude relationship of 1/N where N = Partial #.</li>
+	    </ul>
             </p>
 
           <h4>Filter: </h4>
@@ -54,7 +62,15 @@
             A VCF, or Voltage Controlled Filter, will attenuates frequencies below (high-pass), above (low-pass) or both below and above (band-pass) a certain frequency. VCFs can also be configured to provide band-reject (notch), whereby the high and low frequencies remain while the middle frequencies are removed. Most VCFs have variable resonance, sometimes voltage-controlled.<br /><br />
 
              The filter receives a signal input from signal sources (including oscillators oscillator(s)), and noise), or the output of other processors. By varying the cutoff frequency, the instrument passes or attenuates partials. <br />
-             By varying the cutoff frequency of the VCF (sometimes very slowly), you create a "sweep".Controlling the cutoff by means of a transient voltage control, such as an envelope generator, especially with relatively fast attack settings, may simulate the attack transients of natural or acoustic instruments.
+             By varying the cutoff frequency of the VCF (sometimes very slowly), you create a "sweep".Controlling the cutoff by means of a transient voltage control, such as an envelope generator, especially with relatively fast attack settings, may simulate the attack transients of natural or acoustic instruments.<br /><br />
+	    Those are the main types of filters you'll find:
+             <ul>
+		<li>High Pass Filter(HPF): A HPF attenuates the amplitude of all frequencies lower than the cutoff frequency.</li>
+		<li>Low Pass Filter(LPF): A LPF attenuates the amplitude of all frequencies higher than the cutoff frequency.</li>
+		<li>Band Pass Filter(BPF): A BPF passes frequencies within a certain range and attenuates the amplitude of all frequencies outside that range.</li>
+		<li>Notch Filter: A Notch Filter attenuates the amplitude of frequencies within a certain range and passes all frequencies outside that range.</li>
+		<li>Comb Filter: A Comb Filter adds a delayed version of a signal to itself, causing constructive and destructive interference. The frequency response of a Comb Filter consists of a series of regularly spaced spikes, giving the appearance of a comb.</li>
+             </ul>
             </p>
 
           <h4>Amplifier: </h4>
